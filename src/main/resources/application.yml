@@ -6,15 +6,18 @@ spring:
       server:
         git:
           #仓库地址{application}=spring.application.name: config-server
-          uri: https://github.com/jiqfu/{application}
+          uri: https://github.com/jiqfu/config-server
           searchPaths: config
           #用户名
-          username: xxx
+          username:
           #密码
-          passphrase: xxx
+          passphrase:
           #分支
           default-label: master
 server:
   port: 8888
-
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
 
