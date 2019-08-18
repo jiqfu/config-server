@@ -11,7 +11,7 @@ spring:
           #用户名
           username:
           #密码
-          passphrase:
+          password:
           #分支
           default-label: master
 server:
